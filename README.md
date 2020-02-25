@@ -4,5 +4,5 @@
 
 The page consists of:
   1. The artist's page and the cards she made for her coworkers
-  1. The youtube video of Raffi exploring around the Imagination Studio
+  1. The youtube video of Blippi exploring around the Imagination Studio
   1. The page of the artworks from the visitors during their time at the museum
