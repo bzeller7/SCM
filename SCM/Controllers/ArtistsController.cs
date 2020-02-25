@@ -6,12 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SCM.Controllers
 {
-    public class Blimpi : Controller
+    public class ArtistsController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
     }
-
 }
