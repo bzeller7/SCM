@@ -16,6 +16,7 @@
   <ItemGroup>
     <Folder Include="Views\Artists\" />
     <Folder Include="Views\Blimpi\" />
+    <Folder Include="Views\Developer\" />
   </ItemGroup>
 
 </Project>
