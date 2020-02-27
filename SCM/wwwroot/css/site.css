@@ -1,10 +1,12 @@
 ﻿
 a.navbar-brand {
+  color: white;
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 header {
+    
     background-color: cornflowerblue;
     color: white;
     border: dotted white;
@@ -13,8 +15,8 @@ header {
 }
 
 body {
-    background-image: url('c:\users\that_\source\repos\bzeller7\scm\scm\images\scmbackground.jpg');
-    background-image: linear-gradient(#9FD4F0, #E7D7D8);
+    background-image:url(../images/Background2.png);
+    /*background-image: linear-gradient(#9FD4F0, #E7D7D8);*/
 }
 .main-col{
     float: left;

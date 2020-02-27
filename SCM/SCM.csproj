@@ -19,4 +19,17 @@
     <Folder Include="Views\Developer\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Include="wwwroot\images\Artists.png" />
+    <None Include="wwwroot\images\clay.png" />
+    <None Include="wwwroot\images\Fashion!.png" />
+    <None Include="wwwroot\images\Logo.png" />
+    <None Include="wwwroot\images\painting.png" />
+    <None Include="wwwroot\images\portrait.jpg" />
+    <None Include="wwwroot\images\SCMbackground.jpg" />
+    <None Include="wwwroot\images\Sign.png" />
+    <None Include="wwwroot\images\Waterspray.png" />
+  </ItemGroup>
+
 </Project>
