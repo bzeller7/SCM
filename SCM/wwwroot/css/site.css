@@ -8,6 +8,7 @@ a.navbar-brand {
 }
 
 body {
+    background-image: url('c:\users\that_\source\repos\bzeller7\scm\scm\images\scmbackground.jpg');
     background-image: linear-gradient(#9FD4F0, #E7D7D8);
 }
 
