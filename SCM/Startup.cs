@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SCM.Models;
 
 namespace SCM
 {
@@ -31,6 +33,21 @@ namespace SCM
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Set up session management
+            services.AddDistributedMemoryCache(); //stores session in memory
+            //configures session options
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(15);
+            });
+
+            string con =
+                Configuration.GetConnectionString("contactdb");
+
+            services.AddDbContext<InfoContext>(
+                    //Lambda Expression
+                    options => options.UseSqlServer(con)
+                );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

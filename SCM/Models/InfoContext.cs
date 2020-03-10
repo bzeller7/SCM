@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace SCM.Models
 {
-    public class InfoContext
+    public class InfoContext : DbContext
     {
-        public class infoContext : DbContext
-        {
-            public infoContext(DbContextOptions<InfoContext> options)
-                : base(options)
+            public InfoContext(DbContextOptions<InfoContext> options)
+           : base(options)
             {
 
             }
@@ -21,5 +19,4 @@ namespace SCM.Models
             public DbSet<Contact> contacts { get; set; }
         }
     }
-    }
-}
+

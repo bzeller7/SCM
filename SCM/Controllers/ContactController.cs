@@ -16,11 +16,6 @@ namespace SCM.Controllers
         {
             context = dbContext;
         }
-        public ActionResult Index()
-        {
-            return View();
-        }
-
 
         // GET: Contact/Create
         public IActionResult Create()

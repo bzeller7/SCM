@@ -12,9 +12,8 @@ namespace SCM.Models
                                 , InfoContext context)
         {
             //Create insert query
-            //context.contact.Add(c);
-
-
+            context.contacts.Add(c);
+            context.SaveChanges();
             return c;
         }
     }
