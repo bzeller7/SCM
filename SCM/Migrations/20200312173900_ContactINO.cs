@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SCM.Migrations
 {
-    public partial class addcontact : Migration
+    public partial class ContactINO : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,8 +15,7 @@ namespace SCM.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: false),
                     Email = table.Column<string>(nullable: false),
-                    PhoneNum = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: false)
+                    PhoneNum = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

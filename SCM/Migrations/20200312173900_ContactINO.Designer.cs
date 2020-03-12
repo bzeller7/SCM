@@ -9,8 +9,8 @@ using SCM.Models;
 namespace SCM.Migrations
 {
     [DbContext(typeof(InfoContext))]
-    [Migration("20200310184715_addcontact")]
-    partial class addcontact
+    [Migration("20200312173900_ContactINO")]
+    partial class ContactINO
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,9 +30,6 @@ namespace SCM.Migrations
                         .IsRequired();
 
                     b.Property<string>("Name")
-                        .IsRequired();
-
-                    b.Property<string>("Password")
                         .IsRequired();
 
                     b.Property<string>("PhoneNum");

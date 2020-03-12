@@ -30,9 +30,6 @@ namespace SCM.Migrations
                     b.Property<string>("Name")
                         .IsRequired();
 
-                    b.Property<string>("Password")
-                        .IsRequired();
-
                     b.Property<string>("PhoneNum");
 
                     b.HasKey("MemberId");

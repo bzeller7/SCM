@@ -16,6 +16,10 @@ namespace SCM.Controllers
         {
             context = dbContext;
         }
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         // GET: Contact/Create
         public IActionResult Create()
@@ -31,6 +35,7 @@ namespace SCM.Controllers
             if (ModelState.IsValid)
             {
                 ContactDB.AddContact(c, context);
+                ViewData["Message"] = $"{c.Name} was added!";
                 return View();
             }
             return View();

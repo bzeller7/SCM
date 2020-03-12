@@ -22,9 +22,6 @@ namespace SCM.Models
         [Key] //Mark this field as PK (Primary Key)
         public int MemberId { get; set; }
 
-        [Required]
-        [DataType(DataType.Password)]
-        public string Password { get; set; }
     }
 
 
