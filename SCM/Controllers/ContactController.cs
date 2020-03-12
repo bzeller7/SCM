@@ -36,7 +36,7 @@ namespace SCM.Controllers
             {
                 ContactDB.AddContact(c, context);
                 ViewData["Message"] = $"{c.Name} was added!";
-                return View();
+                return RedirectToAction("Create");
             }
             return View();
         }
