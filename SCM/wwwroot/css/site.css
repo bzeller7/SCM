@@ -33,10 +33,11 @@ body {
 $('.carousel').carousel({
   interval: 2000
 })
-
-.img{
-    
+img-container{
+    text-align:center;
+    display:inline-block;
 }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
